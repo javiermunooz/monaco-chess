@@ -9,15 +9,20 @@ namespace monaco_chess.src
     {
         private string lastName { get; set; }
         private string firstName { get; set; }
+        private int initialRank { get; set; }
+        private int rank { get; set; }
         private Club club { get; set; }
         private int fideID { get; set; }
         private Country country { get; set; }
         private DateTime yearBirth { get; set; }
-        private int rating { get; set; }
+        private int ratingInt { get; set; }
+        private int ratingNac { get; set; }
         private float points { get; set; }
         private float des1 { get; set; }
         private float des2 { get; set; }
         private float des3 { get; set; }
-        private List<Player> opponentList { get; }
+        private List<Game> gameList { get; set; }
+        private bool isRetired { get; set; }
+
     }
 }
