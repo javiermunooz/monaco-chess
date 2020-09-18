@@ -6,18 +6,18 @@ namespace monaco_chess.src
 {
     class Tournament
     {
-        private string name { get; set; }
-        private string director { get; set; }
-        private string organizer { get; set; }
-        private string chiefArbiter { get; set; }
-        private string arbiter { get; set; }
-        private string location { get; set; }
-        private Country country { get; set; }
-        private DateTime startDate { get; set; }
-        private DateTime endDate { get; set; }
-        private List<Player> playerList { get; set; }
-        private List<Club> clubList { get; set; }
-        private List<Player> playerStandings { get; set; }
-        private List<Club> clubStandings { get; set; }
+        public string name { get; set; }
+        public string director { get; set; }
+        public string organizer { get; set; }
+        public string chiefArbiter { get; set; }
+        public string arbiter { get; set; }
+        public string location { get; set; }
+        public Country country { get; set; }
+        public DateTime startDate { get; set; }
+        public DateTime endDate { get; set; }
+        public List<Player> playerList { get; set; }
+        public List<Club> clubList { get; set; }
+        public List<Player> playerStandings { get; set; }
+        public List<Club> clubStandings { get; set; }
     }
 }

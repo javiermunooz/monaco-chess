@@ -1,25 +1,51 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Dynamic;
-using System.Text;
+﻿using System.Collections.Generic;
 
 namespace monaco_chess.src
 {
     class Club
     {
-        private string name { get; set; }
-        private string city { get; set; }
-        private string region { get; set; }
-        private Country country { get; set; }
-        private int initialRank { get; set; }
-        private int rank { get; set; }
-        private float points { get; set; }
-        private float des1 { get; set; }
-        private float des2 { get; set; }
-        private float des3{ get; set; }
-        private int numPlayers { get; set; }
-        private List<Player> playerList { get; set; }
-        private List<Match> matchList { get; set; }
-        private bool isRetired { get; set; }
+        public string name { get; set; }
+        public string city { get; set; }
+        public string region { get; set; }
+        public Country country { get; set; }
+        public int initialRank { get; set; }
+        public int rank { get; set; }
+        public float points { get; set; }
+        public float des1 { get; set; }
+        public float des2 { get; set; }
+        public float des3 { get; set; }
+        public int numPlayers { get; set; }
+        public List<Player> playerList { get; set; }
+        public List<Match> matchList { get; set; }
+        public bool isRetired { get; set; }
+
+        public Club(string name, string city, string region, Country country)
+        {
+            this.name = name;
+            this.city = city;
+            this.region = region;
+            this.country = country;
+            this.playerList = playerList;
+            this.initialRank = 0;
+            this.rank = 0;
+            this.points = 0;
+            this.des1 = 0;
+            this.des2 = 0;
+            this.des3 = 0;
+            this.matchList = new List<Match>();
+            this.isRetired = false;
+        }
+
+        public override string ToString()
+        {
+            if (isRetired == true)
+            {
+                return name + " --> RETIRED";
+            }
+            else
+            {
+                return name + "  " + points + "  " + des1 + "  " + des2 + "  " + des3;
+            }
+        }
     }
 }

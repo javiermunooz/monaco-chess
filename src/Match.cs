@@ -6,9 +6,9 @@ namespace monaco_chess.src
 {
     class Match
     {
-        private Club home { get; set; }
-        private Club away { get; set; }
-        private List<Game> gameList { get; set; }
-        private List<float> results { get; set; }
+        public Club home { get; set; }
+        public Club away { get; set; }
+        public List<Game> gameList { get; set; }
+        public List<float> results { get; set; }
     }
 }

@@ -6,9 +6,9 @@ namespace monaco_chess.src
 {
     class Round
     {
-        private int roundNum { get; set; }
-        private List<Game> gameList { get; set; }
-        private List<Match> matchList { get; set; }
-        private bool isOver { get; set; }
+        public int roundNum { get; set; }
+        public List<Game> gameList { get; set; }
+        public List<Match> matchList { get; set; }
+        public bool isOver { get; set; }
     }
 }
