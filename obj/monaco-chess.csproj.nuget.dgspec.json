@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "Z:\\Developer\\Personal\\monaco-chess\\monaco-chess.csproj": {}
+    "D:\\Developer\\monaco\\monaco-chess.csproj": {}
   },
   "projects": {
-    "Z:\\Developer\\Personal\\monaco-chess\\monaco-chess.csproj": {
+    "D:\\Developer\\monaco\\monaco-chess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "Z:\\Developer\\Personal\\monaco-chess\\monaco-chess.csproj",
+        "projectUniqueName": "D:\\Developer\\monaco\\monaco-chess.csproj",
         "projectName": "monaco-chess",
-        "projectPath": "Z:\\Developer\\Personal\\monaco-chess\\monaco-chess.csproj",
-        "packagesPath": "C:\\Users\\pormi\\.nuget\\packages\\",
-        "outputPath": "Z:\\Developer\\Personal\\monaco-chess\\obj\\",
+        "projectPath": "D:\\Developer\\monaco\\monaco-chess.csproj",
+        "packagesPath": "C:\\Users\\javier\\.nuget\\packages\\",
+        "outputPath": "D:\\Developer\\monaco\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\pormi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\javier\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -55,7 +58,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "Z:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
         }
       }
     }

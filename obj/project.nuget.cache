@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mFcxkwdd/5YTOMBXTqCkbkqUZp/ilVpby9vDcpcy18VZb8NRxNbNdNhUyPmtlYo2HDuNdS/xMnWx6whuhiKtqw==",
+  "dgSpecHash": "4YK2DJRCv3LTylfK7O7eljEivgH5rLtQT6igyya9DIj065ece868MmIBZwTZ2l+3hV7FPZipdPAeJDdVv0SiZQ==",
   "success": true,
-  "projectFilePath": "Z:\\Developer\\Personal\\monaco-chess\\monaco-chess.csproj",
+  "projectFilePath": "D:\\Developer\\monaco\\monaco-chess.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
