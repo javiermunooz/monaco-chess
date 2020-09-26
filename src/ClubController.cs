@@ -53,7 +53,6 @@ namespace monaco_chess.src
             if (index != -1)
             {
                 clubList.RemoveAt(index);
-                Debug.WriteLine(name + " was succesfully removed.");
             }
             else
             {

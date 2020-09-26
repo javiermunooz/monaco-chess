@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Printing.IndexedProperties;
 using System.Text;
 using System.Xml;
 using System.Xml.Serialization;
@@ -11,31 +12,28 @@ namespace monaco_chess.src
     {
         static void Main(string[] args)
         {
+            PlayerController playerController = new PlayerController();
             Club club = new Club("CAP", "Valladolid", "CyL", Country.ESP);
-            Player white = new Player("Muñoz Navarro", "Francisco Javier", club, 12345, Country.ESP, DateTime.Today, 1900, 1850);
-            Player black = new Player("Juez Pérez", "Adriana", club, 12345, Country.ESP, DateTime.Today, 1900, 1850);
+            Player javier = new Player("Muñoz Navarro", "Francisco Javier", club, 0, Country.ESP, new DateTime(1997,8,1), 1400, 1300);
+            Player juan = new Player("Marcos Lomo", "Juan", club, 0, Country.ESP, new DateTime(1999, 3, 27), 1400, 1300);
+            Player omar = new Player("García González", "Omar", club, 0, Country.ESP, new DateTime(1999, 3, 27), 1400, 1300);
 
-            Game game = new Game(white, black);
-            System.Diagnostics.Debug.WriteLine(game.ToString());
-            Console.WriteLine(game.ToString());
-            game.result = "1:0";
-            System.Diagnostics.Debug.WriteLine(game.ToString());
-            Console.WriteLine(game.ToString());
-            game.result = "0.5:0.5";
-            System.Diagnostics.Debug.WriteLine(game.ToString());
-            Console.WriteLine(game.ToString());
-            game.result = "0:1";
-            System.Diagnostics.Debug.WriteLine(game.ToString());
-            Console.WriteLine(game.ToString());
-            game.result = "+:-";
-            System.Diagnostics.Debug.WriteLine(game.ToString());
-            Console.WriteLine(game.ToString());
-            game.result = "-:+";
-            System.Diagnostics.Debug.WriteLine(game.ToString());
-            Console.WriteLine(game.ToString());
-            game.result = "0:0";
-            System.Diagnostics.Debug.WriteLine(game.ToString());
-            Console.WriteLine(game.ToString());
+            Tournament tourn = new Tournament("Pruba", "Yo", "Yo", "Yo", "Yo", "Here", Country.ESP, new DateTime(2020, 08, 01), new DateTime(2020, 08, 01), false);
+            tourn.playerList.Add(javier);
+            tourn.playerList.Add(juan);
+            tourn.playerList.Add(omar);
+
+            foreach(Player player in tourn.playerList)
+            {
+                System.Diagnostics.Debug.WriteLine(player);
+            }
+
+            tourn.updateStandings();
+
+            foreach (Player player in tourn.playerStandings)
+            {
+                System.Diagnostics.Debug.WriteLine(player);
+            }
         }
     }
 }

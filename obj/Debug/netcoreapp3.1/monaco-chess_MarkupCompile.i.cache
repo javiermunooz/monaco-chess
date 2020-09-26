@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-D:\Developer\monaco\obj\Debug\netcoreapp3.1\
+Z:\Developer\Personal\monaco-chess\obj\Debug\netcoreapp3.1\
 monaco_chess
 none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1
-D:\Developer\monaco\App.xaml
+Z:\Developer\Personal\monaco-chess\App.xaml
 11151548125
 
 19-911294589
-1921654412462
+192-138435627
 MainWindow.xaml;
 
 False

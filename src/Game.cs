@@ -9,23 +9,26 @@ namespace monaco_chess.src
     {
         public Player white { get; set; }
         public Player black { get; set; }
+
+        private string _result;
         public string result
         {
             /// <returns>
             /// Current game's result.
             /// </returns>
-            get
-            {
-                return result;
-            }
+            get{ return _result; }
             /// <exception cref="InvalidResultException">Thrown when the result is not included in 
             /// the valid result list.</exception>
             set
             {
-                string[] validResults = { "1:0", "0.5:0.5", "0:1", "+:-", "-:+", "0:0" };
+                string[] validResults = { "1:0", "0.5:0.5", "0:1", "+:-", "-:+", "0:0", "?:?" };
 
-                if (!validResults.Contains(result)) {
+                if (!validResults.Contains(value)) {
                     throw new InvalidResultException();
+                }
+                else
+                {
+                    _result = value;
                 }
             }
         }

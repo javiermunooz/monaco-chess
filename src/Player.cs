@@ -16,7 +16,7 @@ namespace monaco_chess.src
         public Country country { get; set; }
         public DateTime yearBirth { get; set; }
         public int ratingInt { get; set; }
-        public int ratingNac { get; set; }
+        public int ratingNat { get; set; }
         public float points { get; set; }
         public float des1 { get; set; }
         public float des2 { get; set; }
@@ -33,8 +33,8 @@ namespace monaco_chess.src
         /// <param name="country">Country of origin.</param>
         /// <param name="yearBirth">Year of birth.</param>
         /// <param name="ratingInt">International rating.</param>
-        /// <param name="ratingNac">National rating.</param>
-        public Player(string lastName, string firstName, Club club, int fideID, Country country, DateTime yearBirth, int ratingInt, int ratingNac)
+        /// <param name="ratingNat">National rating.</param>
+        public Player(string lastName, string firstName, Club club, int fideID, Country country, DateTime yearBirth, int ratingInt, int ratingNat)
         {
             this.lastName = lastName;
             this.firstName = firstName;
@@ -43,7 +43,7 @@ namespace monaco_chess.src
             this.country = country;
             this.yearBirth = yearBirth;
             this.ratingInt = ratingInt;
-            this.ratingNac = ratingNac;
+            this.ratingNat = ratingNat;
             this.initialRank = 0;
             this.rank = 0;
             this.points = 0;
