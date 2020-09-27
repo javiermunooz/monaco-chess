@@ -23,6 +23,7 @@ namespace monaco_chess.src
         public float des3 { get; set; }
         public List<Game> gameList { get; set; }
         public bool isRetired { get; set; }
+
         /// <summary>
         /// Creates an instance of a player.
         /// </summary>
@@ -67,5 +68,7 @@ namespace monaco_chess.src
                 return lastName + ", " + firstName + "  " + points + "  " + des1 + "  " + des2 + "  " + des3;
             }
         }
+
+        //TODO: BUCHHOLZ AND OTHER TIE-BREAK SYSTEMS
     }
 }
