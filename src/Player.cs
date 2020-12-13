@@ -22,6 +22,7 @@ namespace monaco_chess.src
         public float des2 { get; set; }
         public float des3 { get; set; }
         public List<Game> gameList { get; set; }
+        public List<Player> opponentList { get; set; }
         public bool isRetired { get; set; }
 
         /// <summary>
